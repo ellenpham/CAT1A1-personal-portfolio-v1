@@ -1,0 +1,494 @@
+header {
+  background-color: #1C252C;
+  padding: 16px;
+  text-align: center;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  margin-top: 15px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  margin: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+  header .nav-items {
+    width: 50%;
+  }
+}
+.banner-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-background #background-photo {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 50%;
+}
+
+.head-banner {
+  height: 480px;
+  width: 300px;
+  position: absolute;
+  background-color: #1C252C;
+  box-shadow: 0px 0px 10px #1C252C;
+  display: flex;
+  flex-direction: column;
+}
+.head-banner #profile-photo {
+  height: 200px;
+  width: 140px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.head-banner .head-title {
+  color: white;
+  margin-left: 30px;
+}
+.head-banner .head-title #name {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.head-banner .head-title .full-stack {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.head-banner .head-title .developer {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.head-banner .head-title .underline {
+  border: 1.5px solid white;
+  width: 140px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .head-banner {
+    height: 400px;
+    width: 600px;
+    flex-direction: row;
+  }
+  .head-banner #profile-photo {
+    height: 310px;
+    width: 220px;
+    margin-top: 45px;
+    margin-left: 40px;
+  }
+  .head-banner .head-title {
+    margin-top: 45px;
+  }
+  .head-banner .head-title #name::before {
+    content: "Hello, I'm";
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .head-banner .head-title #name {
+    margin-top: 0;
+    margin-bottom: 19px;
+    font-size: 60px;
+  }
+  .head-banner .head-title .full-stack {
+    font-size: 25px;
+  }
+  .head-banner .head-title .developer {
+    font-size: 25px;
+  }
+}
+.short-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.short-bio .intro {
+  color: #58545B;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: bold;
+}
+.short-bio .brief {
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+}
+.short-bio .resume-button {
+  border: 1px solid #B7A7AE;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B7A7AE;
+}
+.short-bio .resume-button a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+.resume-button:hover {
+  background-color: #E1D5D9;
+  border: #E1D5D9;
+}
+
+.description-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.description-boxes .description-line-1 .tech-skills {
+  border: none;
+  border-radius: 5%;
+  width: 165px;
+  height: 165px;
+  background-color: #E1D5D9;
+  margin: 8px;
+  margin-bottom: 15px;
+}
+.description-boxes .description-line-1 .soft-skills {
+  border: none;
+  border-radius: 5%;
+  width: 165px;
+  height: 165px;
+  background-color: #E1D5D9;
+  margin: 8px;
+}
+.description-boxes .description-line-2 .education {
+  border: none;
+  border-radius: 5%;
+  width: 165px;
+  height: 165px;
+  background-color: #E1D5D9;
+  margin: 8px;
+  margin-bottom: 15px;
+}
+.description-boxes .description-line-2 .experience {
+  border: none;
+  border-radius: 5%;
+  width: 165px;
+  height: 165px;
+  background-color: #E1D5D9;
+  margin: 8px;
+}
+
+.tech-skills {
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.tech-skills .tech-skills-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tech-skills .tech-skills-headline .thinline {
+  border: 0.8px solid black;
+  width: 100%;
+  margin-top: 5px;
+}
+.tech-skills .tech-skills-list {
+  list-style-type: none;
+  margin-top: 5px;
+  padding-left: 0;
+  font-family: "Cormorant Infant", serif;
+}
+.tech-skills .tech-skills-list li {
+  margin: 2px;
+}
+
+.soft-skills {
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.soft-skills .soft-skills-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.soft-skills .soft-skills-headline .thinline {
+  border: 0.8px solid black;
+  width: 100%;
+  margin-top: 5px;
+}
+.soft-skills .soft-skills-list {
+  list-style-type: none;
+  margin-top: 5px;
+  padding-left: 0;
+  font-family: "Cormorant Infant", serif;
+}
+.soft-skills .soft-skills-list li {
+  margin: 2px;
+}
+
+.education {
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.education .education-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.education .education-headline .thinline {
+  border: 0.8px solid black;
+  width: 100%;
+  margin-top: 5px;
+}
+.education .education-list {
+  font-family: "Cormorant Infant", serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.education .education-list #latrobe {
+  font-size: 15px;
+  font-weight: bold;
+}
+.education .education-list #academy {
+  margin-top: 2px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.experience {
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.experience .experience-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.experience .experience-headline .thinline {
+  border: 0.8px solid black;
+  width: 100%;
+  margin-top: 5px;
+}
+.experience .experience-list {
+  font-family: "Cormorant Infant", serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.experience .experience-list #bosch {
+  font-size: 15px;
+  font-weight: bold;
+}
+.experience .experience-list #programmed {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .home-section-2 {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+  }
+  .home-section-2 .short-bio {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    margin-left: 50px;
+  }
+  .home-section-2 .short-bio .intro {
+    color: #58545B;
+    font-size: 30px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: bold;
+  }
+  .home-section-2 .short-bio .brief {
+    font-family: "Cormorant Infant", serif;
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+  }
+  .home-section-2 .description-boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: nowrap;
+    margin: 50px;
+    width: 50%;
+  }
+  .home-section-2 .description-boxes .tech-skills {
+    height: 200px;
+    width: 200px;
+  }
+  .home-section-2 .description-boxes .soft-skills {
+    height: 200px;
+    width: 200px;
+  }
+  .home-section-2 .description-boxes .education {
+    height: 200px;
+    width: 200px;
+  }
+  .home-section-2 .description-boxes .experience {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .home-section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+  .home-section-2 .short-bio {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 30px;
+    position: relative;
+  }
+  .home-section-2 .short-bio .intro {
+    color: #58545B;
+    font-size: 30px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: bold;
+  }
+  .home-section-2 .short-bio .brief {
+    font-family: "Cormorant Infant", serif;
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+  }
+  .home-section-2 .description-boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: nowrap;
+    margin-left: 0px;
+    width: 60%;
+  }
+  .home-section-2 .description-boxes .tech-skills {
+    height: 280px;
+    width: 280px;
+    padding: 30px;
+  }
+  .home-section-2 .description-boxes .tech-skills .tech-skills-headline {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .tech-skills .tech-skills-list {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .home-section-2 .description-boxes .soft-skills {
+    height: 280px;
+    width: 280px;
+    padding: 30px;
+  }
+  .home-section-2 .description-boxes .soft-skills .soft-skills-headline {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .soft-skills .soft-skills-list {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .home-section-2 .description-boxes .education {
+    height: 280px;
+    width: 280px;
+    padding: 30px;
+  }
+  .home-section-2 .description-boxes .education .education-headline {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .education .education-list {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .home-section-2 .description-boxes .education .education-list #latrobe {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .education .education-list #academy {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .experience {
+    height: 280px;
+    width: 280px;
+    padding: 30px;
+  }
+  .home-section-2 .description-boxes .experience .experience-headline {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .experience .experience-list {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .home-section-2 .description-boxes .experience .experience-list #bosch {
+    font-size: 20px;
+  }
+  .home-section-2 .description-boxes .experience .experience-list #programmed {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+body {
+  background-color: rgb(244, 244, 244);
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */

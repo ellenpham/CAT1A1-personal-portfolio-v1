@@ -1,0 +1,107 @@
+@import "../defaults/color";
+@import "../defaults/font";
+
+.banner-background {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    #background-photo {
+        height:600px;
+        width: 100%;
+        object-fit: cover;
+        opacity: 50%;
+    }
+}
+
+.head-banner {
+    height: 480px;
+    width: 300px;
+    position: absolute;
+    background-color: $primary-background;
+    box-shadow: 0px 0px 10px $primary-background;
+    display:flex;
+    flex-direction: column;
+
+    #profile-photo {
+        height: 200px;
+        width: 140px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .head-title {
+        color:$primary-text-color;
+        margin-left: 30px;
+
+        #name {
+            font-family: 'Inter', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .full-stack {
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        .developer {
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .underline {
+            border: 1.5px solid $primary-text-color;
+            width: 140px;
+            margin-top: 0;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .head-banner {
+        height: 400px;
+        width: 600px;
+        flex-direction: row;
+
+        #profile-photo {
+            height: 310px;
+            width: 220px;
+            margin-top: 45px;
+            margin-left: 40px;
+        }
+
+        .head-title {
+        margin-top: 45px;
+            
+            #name::before {
+                content: "Hello, I'm";
+                font-size: 25px;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            #name {
+            margin-top: 0;
+            margin-bottom: 19px;
+            font-size: 60px;
+            }
+        
+            .full-stack {
+                font-size: 25px;
+            }
+
+            .developer {
+                font-size: 25px;
+            }
+        }
+    }
+
+}

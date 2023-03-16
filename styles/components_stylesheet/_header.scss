@@ -1,0 +1,36 @@
+@import "../defaults/color";
+@import "../defaults/font";
+
+header {
+    background-color:$primary-background;
+    padding: 16px;
+    text-align: center;
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    a {
+        color: $primary-text-color;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    header {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+
+        .nav-items {
+            width: 50%;
+        }
+    }
+}

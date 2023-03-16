@@ -1,0 +1,9 @@
+@import "./defaults/color";
+@import "./components_stylesheet/header";
+@import "./homepage_stylesheet/headbanner";
+@import "./homepage_stylesheet/shortbio";
+
+body {
+    background-color: rgb(244, 244, 244);
+    margin: 0;
+}
