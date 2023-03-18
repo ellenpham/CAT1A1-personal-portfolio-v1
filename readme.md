@@ -30,11 +30,12 @@ This page contains my contact details, links to social media and a chat box.
 ### Homepage
 
 The homepage is now displaying only the head banner, with my profile photo and a head title. I am working on adding more features to the homepage, including the below:
-- Head banner (completed)
-- Short bio and short descriptions of skills and experiences with a link to my CV (completed)
-- A brief showcase of my work (in progress)
-- A list of latest blog articles (in progress)
-- A section for references (in progress)
+- Header (completed)
+- Section 1: Head banner (completed)
+- Section 2: Short bio and short descriptions of skills and experiences with a link to my CV (completed)
+- Section 3: A brief showcase of my work (completed)
+- Section 4: A list of latest blog articles (in progress)
+- Section 5: A section for references (in progress)
 - Footer (in progress)
 
 # Styling
