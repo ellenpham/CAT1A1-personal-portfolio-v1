@@ -7,7 +7,6 @@ header .nav-items {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size: 16px;
   margin-top: 15px;
 }
 header a {
@@ -15,6 +14,7 @@ header a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   margin: 5px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 600px) {
@@ -92,32 +92,39 @@ header a {
     flex-direction: row;
   }
   .head-banner #profile-photo {
-    height: 310px;
+    height: 320px;
     width: 220px;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-left: 40px;
   }
   .head-banner .head-title {
-    margin-top: 45px;
+    margin-top: 40px;
   }
   .head-banner .head-title #name::before {
     content: "Hello, I'm";
     font-size: 25px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .head-banner .head-title #name {
     margin-top: 0;
-    margin-bottom: 19px;
+    margin-bottom: 33px;
     font-size: 60px;
   }
   .head-banner .head-title .full-stack {
+    margin-top: 30px;
     font-size: 25px;
   }
   .head-banner .head-title .developer {
     font-size: 25px;
   }
 }
+.home-section-2 {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .short-bio {
   display: flex;
   flex-direction: column;
@@ -128,13 +135,14 @@ header a {
 .short-bio .intro {
   color: #58545B;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: "Cormorant Infant", serif;
   font-weight: bold;
 }
 .short-bio .brief {
   text-align: center;
   font-family: "Cormorant Infant", serif;
+  font-size: 1rem;
 }
 .short-bio .resume-button {
   border: 1px solid #B7A7AE;
@@ -149,7 +157,7 @@ header a {
 .short-bio .resume-button a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   color: black;
 }
@@ -354,7 +362,7 @@ header a {
     font-family: "Cormorant Infant", serif;
     text-align: left;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
   }
   .home-section-2 .description-boxes {
     display: flex;
@@ -486,6 +494,196 @@ header a {
   .home-section-2 .description-boxes .experience .experience-list #programmed {
     margin-top: 10px;
     font-size: 20px;
+  }
+}
+.home-section-3 {
+  background-color: #58545B;
+  width: 100%;
+  padding: 5%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+#my-work-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Cormorant Infant", serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.my-work-intro {
+  color: #E1D5D9;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  gap: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.overlay-1 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+
+.container:hover .overlay-1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay-2 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 0;
+  height: 100%;
+}
+
+.container:hover .overlay-2 {
+  width: 100%;
+  left: 0;
+}
+
+.overlay-3 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+
+.container:hover .overlay-3 {
+  height: 100%;
+}
+
+.overlay-4 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  width: 0;
+  height: 100%;
+}
+
+.container:hover .overlay-4 {
+  width: 100%;
+  right: 0;
+}
+
+.overlay-5 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 0;
+  height: 100%;
+}
+
+.container:hover .overlay-5 {
+  width: 100%;
+  left: 0;
+}
+
+.overlay-6 {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.8s ease;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+
+.container:hover .overlay-6 {
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .project-image {
+    height: 350px;
+  }
+  .container {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .my-work-intro {
+    font-size: 1.2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .project-image {
+    height: 450px;
+  }
+  .container {
+    margin: 0;
   }
 }
 body {
