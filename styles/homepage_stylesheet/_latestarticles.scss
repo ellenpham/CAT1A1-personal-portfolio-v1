@@ -1,0 +1,227 @@
+@import "../defaults/color";
+@import "../defaults/font";
+
+@mixin article-box {
+    border-radius: 10px;
+    overflow:hidden;
+    margin:15px;
+    background-color: $secondary-background;
+}
+
+@mixin box-styling {
+    box-sizing: border-box;
+    padding: 15px;
+    overflow: hidden;
+}
+
+@mixin box-headline {
+    color: $secondary-text-color;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $secondary-font;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@mixin thin-line {
+    border: 0.8px solid $tertiary-background;
+    width: 100%;
+    margin-top: 5px;
+}
+
+@mixin article-title {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+}
+
+.home-section-4 {
+    margin: 30px;
+}
+
+// Styling for the introduction of section 4
+.latest-articles-intro {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+
+    .latest-articles-heading {
+        color: $secondary-text-color;
+        font-family: $primary-font;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .latest-articles-brief {
+        font-family: $primary-font;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .more-articles-button {
+        border: 1px solid $tertiary-background;
+        border-radius: 20px;
+        height: 40px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary-background;
+        margin-bottom: 20px;
+        
+        a {
+            text-decoration: none;
+            font-family: $secondary-font;
+            font-size: 13px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
+
+.more-articles-button:hover {
+    background-color: #E1D5D9;
+    border:#E1D5D9;
+}
+
+// Styling for the list of articles 
+.articles-boxes {
+
+    .article-1 {
+        @include article-box();
+        @include box-styling();
+
+        .article-headline {
+            @include box-headline();
+        }
+
+        .thin-line {
+            @include thin-line();
+        }
+
+        .article-title {
+            @include article-title();
+        }
+        
+    }
+
+    .article-2 {
+        @include article-box();
+        @include box-styling();
+
+        .article-headline{
+            @include box-headline();
+        }
+
+        .thin-line {
+            @include thin-line();
+        }
+
+        .article-title {
+            @include article-title();
+        }
+    }
+
+    .article-3 {
+        @include article-box();
+        @include box-styling();
+
+        
+        .article-headline{
+            @include box-headline();
+        }
+
+        .thin-line {
+            @include thin-line();
+        }
+
+        .article-title {
+            @include article-title();
+        }
+    }
+
+    .article-4 {
+        @include article-box();
+        @include box-styling();
+
+        
+        .article-headline{
+            @include box-headline();
+        }
+
+        .thin-line {
+            @include thin-line();
+        }
+
+        .article-title {
+            @include article-title();
+        }
+    }
+}
+
+#article-link {
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-size: 0.7rem;
+    color: $secondary-text-color;
+    font-weight: bold;
+}
+
+#article-link:hover {
+    text-decoration: underline;
+    color: $tertiary-background;
+}
+
+// Media breakpoints to make section 4 of homepage responsive on tablet.
+
+@media screen and (min-width:700px) {
+    .home-section-4 {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .latest-articles-intro {
+        align-items: flex-start;
+
+        .latest-articles-heading {
+            font-size: 1.8rem;
+            margin-top:0;
+        }
+
+        .latest-articles-brief {
+            text-align: left;
+            width: 80%;
+            font-size: 1rem;
+        }
+    }
+}
+
+// Media breakpoints to make section 4 of homepage responsive on desktop.
+
+@media screen and (min-width:1000px) {
+    .home-section-4 {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .latest-articles-intro {
+        align-items: flex-start;
+
+        .latest-articles-heading {
+            font-size: 2rem;
+            margin-top:0;
+        }
+
+        .latest-articles-brief {
+            text-align: left;
+            width: 80%;
+            font-size: 1.1rem;
+        }
+    }
+}

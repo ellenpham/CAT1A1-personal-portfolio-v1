@@ -221,11 +221,11 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .tech-skills .tech-skills-headline .thinline {
-  border: 0.8px solid black;
+  border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
 }
@@ -250,11 +250,11 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .soft-skills .soft-skills-headline .thinline {
-  border: 0.8px solid black;
+  border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
 }
@@ -279,11 +279,11 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .education .education-headline .thinline {
-  border: 0.8px solid black;
+  border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
 }
@@ -313,11 +313,11 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .experience .experience-headline .thinline {
-  border: 0.8px solid black;
+  border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
 }
@@ -432,24 +432,24 @@ header a {
   }
   .home-section-2 .short-bio .intro {
     color: #58545B;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: "Cormorant Infant", serif;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 0;
   }
   .home-section-2 .short-bio .brief {
     font-family: "Cormorant Infant", serif;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 80%;
   }
   .home-section-2 .resume-button {
-    height: 60px;
-    width: 170px;
-    border-radius: 40px;
+    height: 50px;
+    width: 150px;
+    border-radius: 60px;
   }
   .home-section-2 .resume-button a {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .home-section-2 .description-boxes {
     margin: 0;
@@ -460,7 +460,7 @@ header a {
     padding: 30px;
   }
   .home-section-2 .description-boxes .tech-skills .tech-skills-headline {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .home-section-2 .description-boxes .tech-skills .tech-skills-list {
     font-size: 20px;
@@ -472,7 +472,7 @@ header a {
     padding: 30px;
   }
   .home-section-2 .description-boxes .soft-skills .soft-skills-headline {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .home-section-2 .description-boxes .soft-skills .soft-skills-list {
     font-size: 20px;
@@ -484,7 +484,7 @@ header a {
     padding: 30px;
   }
   .home-section-2 .description-boxes .education .education-headline {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .home-section-2 .description-boxes .education .education-list {
     font-size: 20px;
@@ -503,7 +503,7 @@ header a {
     padding: 30px;
   }
   .home-section-2 .description-boxes .experience .experience-headline {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .home-section-2 .description-boxes .experience .experience-list {
     font-size: 20px;
@@ -538,6 +538,7 @@ header a {
   padding: 5%;
   padding-top: 20px;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 #my-work-header {
@@ -584,7 +585,7 @@ header a {
   text-align: center;
 }
 
-a {
+#project-link {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -720,6 +721,214 @@ a {
   }
   .container {
     margin: 0;
+  }
+}
+.home-section-4 {
+  margin: 30px;
+}
+
+.latest-articles-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+.latest-articles-intro .latest-articles-heading {
+  color: #58545B;
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.latest-articles-intro .latest-articles-brief {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.latest-articles-intro .more-articles-button {
+  border: 1px solid #B7A7AE;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B7A7AE;
+  margin-bottom: 20px;
+}
+.latest-articles-intro .more-articles-button a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+
+.more-articles-button:hover {
+  background-color: #E1D5D9;
+  border: #E1D5D9;
+}
+
+.articles-boxes .article-1 {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  background-color: #E1D5D9;
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.articles-boxes .article-1 .article-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.articles-boxes .article-1 .thin-line {
+  border: 0.8px solid #B7A7AE;
+  width: 100%;
+  margin-top: 5px;
+}
+.articles-boxes .article-1 .article-title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+.articles-boxes .article-2 {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  background-color: #E1D5D9;
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.articles-boxes .article-2 .article-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.articles-boxes .article-2 .thin-line {
+  border: 0.8px solid #B7A7AE;
+  width: 100%;
+  margin-top: 5px;
+}
+.articles-boxes .article-2 .article-title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+.articles-boxes .article-3 {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  background-color: #E1D5D9;
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.articles-boxes .article-3 .article-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.articles-boxes .article-3 .thin-line {
+  border: 0.8px solid #B7A7AE;
+  width: 100%;
+  margin-top: 5px;
+}
+.articles-boxes .article-3 .article-title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+.articles-boxes .article-4 {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  background-color: #E1D5D9;
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: hidden;
+}
+.articles-boxes .article-4 .article-headline {
+  color: #58545B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.articles-boxes .article-4 .thin-line {
+  border: 0.8px solid #B7A7AE;
+  width: 100%;
+  margin-top: 5px;
+}
+.articles-boxes .article-4 .article-title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+
+#article-link {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  color: #58545B;
+  font-weight: bold;
+}
+
+#article-link:hover {
+  text-decoration: underline;
+  color: #B7A7AE;
+}
+
+@media screen and (min-width: 700px) {
+  .home-section-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .latest-articles-intro {
+    align-items: flex-start;
+  }
+  .latest-articles-intro .latest-articles-heading {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .latest-articles-intro .latest-articles-brief {
+    text-align: left;
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home-section-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .latest-articles-intro {
+    align-items: flex-start;
+  }
+  .latest-articles-intro .latest-articles-heading {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .latest-articles-intro .latest-articles-brief {
+    text-align: left;
+    width: 80%;
+    font-size: 1.1rem;
   }
 }
 body {

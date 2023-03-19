@@ -16,13 +16,13 @@ The website is in the building process. This Readme fille will be updated alongs
 
 ## Header
 Header includes a personal logo and a navigation bar, which contains the links to the other pages of the website, listed as below:
-- About me:   
+- About: 
 This page includes information regarding my background, brief of work history and skills, area of interest, and a link to my full resume. 
-- My work:    
+- Work: 
 This page showcases my projects. 
-- My blog:   
+- Blog: 
 This page displays my blog posts
-- Contact me:   
+- Contact:  
 This page contains my contact details, links to social media and a chat box. 
 
 ## Pages
@@ -34,7 +34,7 @@ The homepage is now displaying only the head banner, with my profile photo and a
 - Section 1: Head banner (completed)
 - Section 2: Short bio and short descriptions of skills and experiences with a link to my CV (completed)
 - Section 3: A brief showcase of my work (completed)
-- Section 4: A list of latest blog articles (in progress)
+- Section 4: A list of latest blog articles (completed)
 - Section 5: A section for references (in progress)
 - Footer (in progress)
 

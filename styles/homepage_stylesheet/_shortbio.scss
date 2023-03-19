@@ -33,17 +33,17 @@
     flex-direction: column;
     justify-content: flex-start;
     font-family: $secondary-font;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
 
 @mixin box-headline-desktop {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 @mixin thin-line {
-    border: 0.8px solid black;
+    border: 0.8px solid $tertiary-background;
     width: 100%;
     margin-top: 5px;
 }
@@ -359,28 +359,28 @@
         
             .intro {
                 color: $secondary-text-color;
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 font-family: $primary-font;
                 font-weight: bold;
-                margin-top:20px;
+                margin-top:0;
             }
         
             .brief {
                 font-family: $primary-font;
                 text-align: left;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 width: 80%;
             }
         }
 
         
         .resume-button {
-            height: 60px;
-            width: 170px;
-            border-radius: 40px;
+            height: 50px;
+            width: 150px;
+            border-radius: 60px;
 
             a {
-           font-size: 16px;
+           font-size: 1rem;
             }
         }
 
