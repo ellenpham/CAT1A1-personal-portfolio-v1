@@ -52,6 +52,8 @@
     margin: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
 }
 
 // Styling for the short bio 
@@ -65,7 +67,7 @@
     .intro {
         color: $secondary-text-color;
         margin-bottom: 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: $primary-font;
         font-weight: bold;
     }
@@ -103,12 +105,10 @@
 
 // Styling for the whole section of short descriptions of skills and experience.
 .description-boxes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 
     .description-line-1 {
         
@@ -247,25 +247,23 @@
 
 // Media breakpoints to make section 2 of homepage responsive on tablet.
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
     .home-section-2 {
-        display:flex;
-        flex-direction: row;
-        height: 600px;
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
 
         .short-bio {
-            width:50%;
+            width:80%;
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin: 20px;
             margin-left: 50px;
         
             .intro {
                 color: $secondary-text-color;
-                font-size: 30px;
+                font-size: 1.7rem;
                 font-family: $primary-font;
                 font-weight: bold;
             }
@@ -273,35 +271,68 @@
             .brief {
                 font-family: $primary-font;
                 text-align: left;
-                font-size: 20px;
+                font-size: 1.3rem;
                 width: 100%;
             }
         }
 
         .description-boxes {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            flex-flow: nowrap;
-            margin: 50px;
-            width:50%;
+            display: grid;
+            margin: 20px;
 
             .tech-skills {
-                @include description-box-tablet();  
+                @include description-box-tablet();
+                
+                .tech-skills-list {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
             }
 
             .soft-skills {
-                @include description-box-tablet();   
+                @include description-box-tablet();
+
+                .soft-skills-list {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }   
             }
 
             .education {
-                @include description-box-tablet();   
+                @include description-box-tablet();
+                
+                 
+                .education-list {
+                    font-size: 14px;
+                    margin-top: 10px;
+
+                    #latrobe {
+                        font-size: 18px;
+                    }
+
+                    #academy {
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                }
             }
 
             .experience {
-                @include description-box-tablet();  
+                @include description-box-tablet();
+                
+                .experience-list {
+                    font-size: 14px;
+                    margin-top: 10px;
+
+                    #bosch {
+                        font-size: 18px;
+                    }
+
+                    #programmed {
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                }  
             }
         }
     }
@@ -309,50 +340,53 @@
 
 // Media breakpoints to make section 2 of homepage responsive on desktop.
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1300px) {
     .home-section-2 {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 800px;
-        width: 100%;
-        padding: 100px;
-        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
 
         .short-bio {
-            width:40%;
+            width:100%;
+            margin: 0;
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-left: 50px;
-            margin-right: 30px;
-            position: relative;
         
             .intro {
                 color: $secondary-text-color;
-                font-size: 30px;
+                font-size: 2.5rem;
                 font-family: $primary-font;
                 font-weight: bold;
+                margin-top:20px;
             }
         
             .brief {
                 font-family: $primary-font;
                 text-align: left;
-                font-size: 20px;
+                font-size: 1.5rem;
                 width: 80%;
             }
         }
 
+        
+        .resume-button {
+            height: 60px;
+            width: 170px;
+            border-radius: 40px;
+
+            a {
+           font-size: 16px;
+            }
+        }
+
+
         .description-boxes {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            flex-flow: nowrap;
-            margin-left: 0px;
-            width:60%;
+            margin: 0;
 
             .tech-skills {
                 @include description-box-desktop();
@@ -424,6 +458,26 @@
                 }
             }
         }
+    }
+}
+
+// Animation to make section 2 slowly fade in when loading webpage
+.home-section-2 {
+    animation: fadein 3s linear 1 forwards;
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
