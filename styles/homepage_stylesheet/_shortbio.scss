@@ -54,6 +54,7 @@
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(1fr, 1fr);
+    justify-items: center;
 }
 
 // Styling for the short bio 
@@ -106,7 +107,7 @@
 // Styling for the whole section of short descriptions of skills and experience.
 .description-boxes {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
 

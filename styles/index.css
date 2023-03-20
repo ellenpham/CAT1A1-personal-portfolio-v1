@@ -125,6 +125,7 @@ header a {
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(1fr, 1fr);
+  justify-items: center;
 }
 
 .short-bio {
@@ -171,7 +172,7 @@ header a {
 
 .description-boxes {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
 }
@@ -935,13 +936,9 @@ header a {
     font-size: 1.1rem;
   }
 }
-body, html {
-  height: 100%;
-}
-
 .parallax {
   background-image: url(../images/parallax1-crop-1.jpg);
-  min-height: 450px;
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -971,10 +968,10 @@ body, html {
   margin-top: 5px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .parallax {
     background-image: url(../images/parallax1-crop.jpg);
-    min-height: 400px;
+    min-height: 600px;
   }
   .testimonials {
     padding-left: 50px;
@@ -993,10 +990,10 @@ body, html {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .parallax {
     background-image: url(../images/parallax1.jpg);
-    min-height: 400px;
+    min-height: 600px;
   }
   .testimonials {
     height: 350px;
@@ -1015,7 +1012,90 @@ body, html {
     font-size: 1rem;
   }
 }
+footer {
+  background-color: #1C252C;
+  color: white;
+  font-family: "Cormorant Infant", serif;
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer #get-in-touch {
+  font-size: 1.5rem;
+  color: #E1D5D9;
+  margin-bottom: 0;
+}
+footer .contact-info {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer .contact-info .email {
+  text-decoration: none;
+  color: white;
+}
+footer .email:hover {
+  text-decoration: underline;
+  color: #B7A7AE;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+footer .fa-brands {
+  color: white;
+  font-size: 1.2rem;
+}
+footer .fa-brands:hover {
+  font-size: 2rem;
+  color: #B7A7AE;
+}
+
+.thin-line {
+  border: 0.5px solid #E1D5D9;
+}
+
+.copyright {
+  margin: 0;
+  color: #B7A7AE;
+  font-size: 0.8rem;
+}
+
+.back-to-top {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer #get-in-touch {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  footer .contact-info {
+    font-size: 1.2rem;
+  }
+  footer .fa-brands {
+    font-size: 1.4rem;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
+}
 body {
   background-color: rgb(244, 244, 244);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */

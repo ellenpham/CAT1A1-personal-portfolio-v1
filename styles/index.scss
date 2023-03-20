@@ -5,8 +5,13 @@
 @import "./homepage_stylesheet/mywork";
 @import "./homepage_stylesheet/latestarticles";
 @import "./homepage_stylesheet/testimonial";
+@import "./components_stylesheet/footer";
 
 body {
     background-color: rgb(244, 244, 244);
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

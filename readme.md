@@ -36,7 +36,7 @@ The homepage is now displaying only the head banner, with my profile photo and a
 - Section 3: A brief showcase of my work (completed)
 - Section 4: A list of latest blog articles (completed)
 - Section 5: A section for references (completed)
-- Footer (in progress)
+- Footer (completed)
 
 # Styling
 The main portfolio folder has been reorganized to make all the files trackable for more complicated code later on. The following folders have been crated as listed below:

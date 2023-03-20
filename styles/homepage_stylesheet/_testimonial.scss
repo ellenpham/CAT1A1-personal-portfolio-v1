@@ -1,11 +1,8 @@
 // Styling for parallax section
-body, html {
-    height: 100%;
-  }
 
 .parallax {
     background-image: url(../images/parallax1-crop-1.jpg);
-    min-height: 450px;
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,11 +36,11 @@ body, html {
     }
 }
 
-// Media breakpoints to make section 5 of homepage responsive on desktop.
-@media screen and (min-width:500px) {
+// Media breakpoints to make section 5 of homepage responsive on tablet.
+@media screen and (min-width:600px) {
     .parallax {
         background-image: url(../images/parallax1-crop.jpg);
-        min-height: 400px;
+        min-height: 600px;
     }
 
     .testimonials {
@@ -68,10 +65,10 @@ body, html {
 }
 
 // Media breakpoints to make section 5 of homepage responsive on desktop.
-@media screen and (min-width:800px) {
+@media screen and (min-width:1000px) {
     .parallax {
         background-image: url(../images/parallax1.jpg);
-        min-height: 400px;
+        min-height: 600px;
     }
 
     .testimonials {
