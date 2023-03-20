@@ -35,7 +35,7 @@ The homepage is now displaying only the head banner, with my profile photo and a
 - Section 2: Short bio and short descriptions of skills and experiences with a link to my CV (completed)
 - Section 3: A brief showcase of my work (completed)
 - Section 4: A list of latest blog articles (completed)
-- Section 5: A section for references (in progress)
+- Section 5: A section for references (completed)
 - Footer (in progress)
 
 # Styling

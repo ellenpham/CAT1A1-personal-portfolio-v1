@@ -20,7 +20,7 @@
 
 #my-work-header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: $primary-font;
     color:$primary-text-color;
@@ -185,6 +185,10 @@
 
 // Media breakpoints to make section 3 of homepage responsive on desktop. 
 @media screen and (min-width:1000px) {
+    #my-work-header {
+        font-size: 2rem;
+    }
+
 
     .my-work-intro {
         font-size: 1.2rem;
