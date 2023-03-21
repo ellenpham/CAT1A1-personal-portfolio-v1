@@ -1,0 +1,23 @@
+@import "../defaults/font";
+@import "../defaults/color";
+
+.about-section-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+    .story {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+    }
+
+    .motto {
+        font-family: $tertiary-font;
+        font-size: 2rem;
+        margin-left: 20px;
+        margin-top:-15px;
+        padding-right: 70px;
+    }
+}
