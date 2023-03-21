@@ -937,7 +937,7 @@ header a {
   }
 }
 .parallax {
-  background-image: url(../images/parallax1-crop-1.jpg);
+  background-image: url(../images/parallax-image.jpg);
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -970,7 +970,7 @@ header a {
 
 @media screen and (min-width: 600px) {
   .parallax {
-    background-image: url(../images/parallax1-crop.jpg);
+    background-image: url(../images/parallax-image.jpg);
     min-height: 600px;
   }
   .testimonials {
@@ -992,7 +992,7 @@ header a {
 }
 @media screen and (min-width: 1000px) {
   .parallax {
-    background-image: url(../images/parallax1.jpg);
+    background-image: url(../images/parallax-image.jpg);
     min-height: 600px;
   }
   .testimonials {

@@ -1,7 +1,7 @@
 // Styling for parallax section
 
 .parallax {
-    background-image: url(../images/parallax1-crop-1.jpg);
+    background-image: url(../images/parallax-image.jpg);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -39,7 +39,7 @@
 // Media breakpoints to make section 5 of homepage responsive on tablet.
 @media screen and (min-width:600px) {
     .parallax {
-        background-image: url(../images/parallax1-crop.jpg);
+        background-image: url(../images/parallax-image.jpg);
         min-height: 600px;
     }
 
@@ -67,7 +67,7 @@
 // Media breakpoints to make section 5 of homepage responsive on desktop.
 @media screen and (min-width:1000px) {
     .parallax {
-        background-image: url(../images/parallax1.jpg);
+        background-image: url(../images/parallax-image.jpg);
         min-height: 600px;
     }
 
