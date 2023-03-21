@@ -104,5 +104,20 @@
             }
         }
     }
+}
 
+// Animation to make head banner slowly fade in when loading webpage
+.head-banner {
+    animation: fade-in 3s ease-in-out 1 forwards;
+}
+
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

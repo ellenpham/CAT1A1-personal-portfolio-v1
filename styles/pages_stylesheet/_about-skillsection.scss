@@ -49,7 +49,6 @@
 }
 
 .about-section-2 {
-    margin-top:-20px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 40px;
@@ -247,7 +246,7 @@
     }
 }
 
-// Media breakpoints to make section 2 of homepage responsive on tablet.
+// Media breakpoints for responsive view on tablet.
 
 @media screen and (min-width:700px) {
     .about-section-2 {
@@ -342,7 +341,7 @@
     }
 }
 
-// Media breakpoints to make section 2 of homepage responsive on desktop.
+// Media breakpoints for responsive view on desktop.
 
 @media screen and (min-width:1200px) {
     .about-section-2 {
@@ -469,7 +468,7 @@
 }
 
 // Animation to make section 2 slowly fade in when loading webpage
-.home-section-2 {
+.about-section-2 {
     animation: fadein 3s linear 1 forwards;
 }
 
