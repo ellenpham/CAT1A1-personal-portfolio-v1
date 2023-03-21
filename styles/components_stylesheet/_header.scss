@@ -22,6 +22,11 @@ header {
     }
 }
 
+
+a:hover {
+    color: $tertiary-background;
+}
+
 @media screen and (min-width:600px) {
     header {
         display:flex;

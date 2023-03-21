@@ -38,6 +38,14 @@ The homepage is now displaying only the head banner, with my profile photo and a
 - Section 5: A section for references (completed)
 - Footer (completed)
 
+### About
+
+The About page contains more detailed and more personal information about me, which includes my background, my specialization, my interest and my vision. There is also a link to my resume in this page. 
+
+### Work
+
+The Work page contains all the projects that I have worked on. The content includes the description of all steps in the working process and photos/screenshots taken during the process.
+
 # Styling
 The main portfolio folder has been reorganized to make all the files trackable for more complicated code later on. The following folders have been crated as listed below:
 

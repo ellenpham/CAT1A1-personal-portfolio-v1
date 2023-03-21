@@ -1,5 +1,5 @@
 header {
-  background-color: #1C252C;
+  background-color: #58545B;
   padding: 16px;
   text-align: center;
 }
@@ -15,6 +15,10 @@ header a {
   font-family: "Inter", sans-serif;
   margin: 5px;
   font-size: 16px;
+}
+
+a:hover {
+  color: #B7A7AE;
 }
 
 @media screen and (min-width: 600px) {
@@ -533,7 +537,7 @@ header a {
     opacity: 1;
   }
 }
-.home-section-3 {
+#home-section-3 {
   background-color: #58545B;
   width: 100%;
   padding: 5%;
@@ -1013,7 +1017,7 @@ header a {
   }
 }
 footer {
-  background-color: #1C252C;
+  background-color: #58545B;
   color: white;
   font-family: "Cormorant Infant", serif;
   height: 300px;

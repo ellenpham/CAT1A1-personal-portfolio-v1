@@ -21,6 +21,7 @@
     }
 }
 
+// Styling for responsive view in tablet
 @media screen and (min-width: 700px) {
     .about-section-3 {
         display: grid;
@@ -44,7 +45,7 @@
     }
 }
 
-
+// Styling for responsive view in desktop
 @media screen and (min-width: 1200px) {
 .about-section-3 {
     display: grid;
