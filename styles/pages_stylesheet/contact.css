@@ -1122,4 +1122,144 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contact-me {
+  margin-bottom: 50px;
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+.contact-me h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: #58545B;
+}
+.contact-me .my-email {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #58545B;
+}
+.contact-me .my-number {
+  margin-top: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #58545B;
+}
+.contact-me i {
+  margin-right: 8px;
+}
+
+form {
+  margin-bottom: 40px;
+}
+form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+}
+form .form-elements label {
+  font-size: 1rem;
+  color: #58545B;
+}
+form .form-elements .form-input {
+  border: 2px solid #B7A7AE;
+  outline: none;
+  border-width: 0 0 2px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form .form-elements .form-input:focus {
+  border: solid 2px #B7A7AE;
+}
+form .form-elements .form-input:not(.form-textarea) {
+  height: 36px;
+}
+form .form-elements .form-input.form-textarea {
+  resize: none;
+}
+form .send-button {
+  text-align: center;
+  margin-top: 24px;
+}
+form .send-button #send {
+  height: 40px;
+  min-width: 140px;
+  background-color: #E1D5D9;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+}
+form .send-button #send:hover {
+  cursor: pointer;
+  background-color: #B7A7AE;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  section .contact-me h1 {
+    margin-top: 0;
+    font-size: 2.3rem;
+  }
+  section .contact-me .my-message {
+    font-size: 1.3rem;
+  }
+  section form {
+    margin-top: 20px;
+  }
+}
+.contact-me {
+  animation: info-move 3s 1;
+  animation-timing-function: ease;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@keyframes info-move {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+.form-elements {
+  overflow-x: hidden;
+}
+
+.form-elements {
+  animation: form-move 3s 1;
+  animation-timing-function: ease;
+  position: relative;
+}
+
+@keyframes form-move {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0px;
+  }
 }/*# sourceMappingURL=contact.css.map */

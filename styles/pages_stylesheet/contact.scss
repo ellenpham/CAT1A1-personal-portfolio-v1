@@ -2,3 +2,160 @@
 @import "../defaults/font";
 @import "../defaults/color";
 
+section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:80px;
+    margin-bottom: 80px;
+
+}
+
+.contact-me {
+    margin-bottom: 50px;
+    font-family: $primary-font;
+    font-size: 1.2rem;
+        
+        h1 {
+            font-family: $tertiary-font;
+            font-weight: 500;
+            color: $primary-background;
+        }
+
+        .my-email {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-family: $secondary-font;
+            font-size: 1rem;
+            color: $primary-background;
+        }
+
+        .my-number {
+            margin-top: 0;
+            font-family: $secondary-font;
+            font-size: 1rem;
+            color: $primary-background;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+    }
+
+form {
+
+    margin-bottom: 40px;
+
+    .form-elements {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        font-family: $tertiary-font;
+
+        label {
+            font-size: 1rem;
+            color: $primary-background;
+            }
+        
+        .form-input {
+            border: 2px solid $tertiary-background;
+            outline: none;
+            border-width: 0 0 2px;
+            font-size: 1rem;
+            font-family: $secondary-font;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        
+
+            &:focus {
+                border: solid 2px $tertiary-background;
+            }
+
+            &:not(.form-textarea) {
+                height: 36px;
+            }
+
+            &.form-textarea {
+                resize: none;
+            }
+        }
+    }
+
+    .send-button {
+        text-align: center;
+        margin-top:24px;
+
+        #send {
+            height: 40px;
+            min-width: 140px;
+            background-color: $secondary-background;
+            color: black;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            font-family: $tertiary-font;
+            font-size: 1.1rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $tertiary-background;
+                color: $primary-text-color;
+            }
+        }
+    }
+}
+
+// Styling for responsive view on tablet and desktop
+@media screen and (min-width:700px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        .contact-me {
+            h1 {
+                margin-top: 0;
+                font-size: 2.3rem;
+            }
+
+            .my-message {
+                font-size: 1.3rem;
+            }
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    }
+}
+
+// Animation effect for the Contact page
+
+.contact-me {
+    animation: info-move 3s 1;
+    animation-timing-function: ease;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@keyframes info-move {
+    from {bottom: -200px;}
+    to {bottom: 0px}
+}
+
+.form-elements {
+    overflow-x: hidden;
+}
+
+.form-elements {
+    animation: form-move 3s 1;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+@keyframes form-move {
+    from {right: -200px;}
+    to {right: 0px}
+}

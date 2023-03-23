@@ -46,6 +46,10 @@ The About page contains more detailed and more personal information about me, wh
 
 The Work page contains all the projects that I have worked on. The content includes the description of all steps in the working process and photos/screenshots taken during the process.
 
+### Contact
+
+The Contact page contains my contact information and a form for any queries to be sent to me. 
+
 # Styling
 The main portfolio folder has been reorganized to make all the files trackable for more complicated code later on. The following folders have been crated as listed below:
 
