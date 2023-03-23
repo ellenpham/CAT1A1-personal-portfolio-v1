@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellen My Pham</title>
+
+    <!-- Link to styling files -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/blog_stylesheet/blog.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/Ellen_Favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600;700&family=Inter&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/Ellen_logo_resize.png" alt="Ellen Logo" height="75px" width="75px">
+            </a>
+        </div>
+        <nav class="nav-items">
+            <a href="./about.html">About</a>
+            <a href="../index.html#home-section-3">Work</a> 
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- This component is parallax scrolling -->
+        <div class="parallax"></div>
+
+        <section>
+            <!-- This component is an introduction for the Blog page  -->
+            <p class="blog-intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt odit, dolor sed veritatis iure rerum cupiditate repellat quasi nulla. Animi optio deleniti incidunt blanditiis suscipit inventore molestiae voluptas illo?
+            </p>
+
+            <!-- The "blog-section" component contains all related information of each topic, including topic header and decoration line -->
+            <!-- This components will be duplicated 4 times for 4 blog topics. Only the articles information are changes, the stylings are the same-->
+            <div class="blog-section">
+                <div class="decoration-line"></div>
+                <p class="blog-topic">WEB DEVELOPMENT</p>
+
+            <!-- The "articles-list" component contains only the articles related-information, including articles thumbnail, articles' title and date published-->
+            <!-- Each articles list contains 3 articles, the code of each article is written under <article> -->
+                <div class="articles-list">
+                    <!-- Article 1 -->
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Second duplicated blog section -->
+            <div class="blog-section">
+                <div class="decoration-line"></div>
+                <p class="blog-topic">PERSONAL GROWTH</p>
+
+                <div class="articles-list">
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Third duplicated blog section -->
+            <div class="blog-section">
+                <div class="decoration-line"></div>
+                <p class="blog-topic">WELLNESS</p>
+
+                <div class="articles-list">
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Fourth duplicated blog section -->
+            <div class="blog-section">
+                <div class="decoration-line"></div>
+                <p class="blog-topic">LEARNING SOURCE</p>
+
+                <div class="articles-list">
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+
+                    <article>
+                        <a href="https://google.com.au">
+                            <img class="article-image" src="../images/banner_background5.jpg" alt="article-1" style="width:350px;height:230px;">
+                        </a>
+                        <div>
+                            <a class="article-title" href="https://google.com.au">Advances website design techniques.</a>
+                        </div>
+                        <p class="date-published">November 25, 2022</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p id="get-in-touch">Get In Touch</p>
+        <div class="contact-info">
+            <p>(+61) 0411 380 893</p>
+            <p><a class="email" href="mailto:ellenpham1510@gmail.com">ellenpham1510@gmail.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+
+        <div class="copyright">
+            <div class=thin-line></div>
+            <p class="copyright-text">Designed & Built with ❤ Copyright 2023 Ellen Pham</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.parallax {
+  background-image: url(https://images.unsplash.com/photo-1485125457414-5f3aa5b0d208?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1134&q=80);
+  min-height: 300px;
+}
+
+section {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+section .blog-intro {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Cormorant Infant", serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+section .blog-section .articles-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+section .blog-section .articles-list .article-image {
+  margin-bottom: 20px;
+}
+section .blog-section .articles-list .article-title {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+section .blog-section .articles-list .date-published {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+section .blog-section .decoration-line {
+  width: 100%;
+  border: 1.2px solid #B7A7AE;
+}
+section .blog-section .blog-topic {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500px;
+  color: #58545B;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=blog.css.map */
