@@ -2,8 +2,8 @@
 @import "../defaults/font";
 
 .parallax {
-    background-image: url(https://images.unsplash.com/photo-1485125457414-5f3aa5b0d208?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1134&q=80);
-    min-height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    min-height: 200px;
 }
 
 section {
@@ -28,8 +28,6 @@ section {
             }
   
             .image-holder {
-                // max-width: 350px;
-                // max-height: 230px;
                 overflow: hidden;
                 margin-bottom: 20px;
 
@@ -91,6 +89,10 @@ section {
 
 @media screen and (min-width:600px) {
 
+    .parallax {
+        min-height: 300px;
+    }
+
     section {
         margin-left: 100px;
         margin-right: 100px;
@@ -112,9 +114,14 @@ section {
 
 
 @media screen and (min-width:1000px) {
+
+.parallax {
+    min-height: 400px;
+}
+
 section {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 50px;
     margin-bottom: 100px;
 
@@ -129,8 +136,8 @@ section {
 
         .articles-list {
             display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 30px;
+            grid-template-columns: 330px 330px 330px;
+            gap: 40px;
             margin-bottom: 50px;
             
             .image-holder {
@@ -147,37 +154,27 @@ section {
     }
 }
 
-    //         .article-title {
-    //             text-decoration: none;
-    //             color: black;
-    //             font-family: $secondary-font;
-    //             font-weight: bold;
-    //             font-size: 1.1rem;
 
-    //             &:hover {
-    //                 text-decoration: underline;
-    //             }
+@media screen and (min-width:1500px) {
 
-    //         }
+    .parallax {
+        min-height: 500px;
+    }
 
-    //         .date-published {
-    //             font-family: $primary-font;
-    //             font-size: 1.1rem;
-    //             margin-top: 5px;
-    //         }
-    //     }
+    section {
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 50px;
+        margin-bottom: 100px;
 
-    //     .decoration-line {
-    //         width: 100%;
-    //         border: 1.2px solid $tertiary-background;
-    //     }
+        .blog-section {
 
-    //     .blog-topic {
-    //         font-family: $tertiary-font;
-    //         font-size: 1.8rem;
-    //         font-weight: 500px;
-    //         color: $primary-background;
-    //         margin-top: 10px;
-    //         margin-bottom: 30px;
-    //     }
-    // }
+            .articles-list {
+                display: grid;
+                grid-template-columns: 420px 420px 420px;
+                gap: 40px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
