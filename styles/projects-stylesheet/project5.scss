@@ -15,7 +15,7 @@ header {
 
 .project-heading-photo {
     width: 100%;
-    height: 500px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -61,6 +61,10 @@ h1 {
         margin-right: 100px;
     }
 
+    .project-heading-photo {
+        height: 350px;
+    }
+
     .project-role {
         font-size: 1.2rem;
     }
@@ -79,6 +83,10 @@ h1 {
         margin-left: 250px;
         margin-right: 250px;
         margin-bottom: 180px;
+    }
+    
+    .project-heading-photo {
+        height: 400px;
     }
 
     .project-role {

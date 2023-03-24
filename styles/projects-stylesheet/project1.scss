@@ -2,12 +2,6 @@
 @import "../defaults/font";
 @import "../defaults/color";
 
-// Styling for sticky navigation bar for keep audience engaging despite long content
-header {
-    position: sticky;
-    top:0;
-}
-
 // Styling for project heading section
 .project-heading {
     box-sizing: border-box;
@@ -15,7 +9,7 @@ header {
 
 .project-heading-photo {
     width: 100%;
-    height: 500px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -61,6 +55,10 @@ h1 {
         margin-right: 100px;
     }
 
+    .project-heading-photo {
+        height: 350px;
+    }
+
     .project-role {
         font-size: 1.2rem;
     }
@@ -79,6 +77,10 @@ h1 {
         margin-left: 250px;
         margin-right: 250px;
         margin-bottom: 180px;
+    }
+
+    .project-heading-photo {
+        height: 400px;
     }
 
     .project-role {
