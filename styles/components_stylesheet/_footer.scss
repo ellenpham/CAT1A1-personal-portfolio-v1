@@ -1,6 +1,7 @@
 @import "../defaults/color";
 @import "../defaults/font";
 
+/* Styling for the whole footer and footer's header */
 footer {
     background-color: $primary-background;
     color: $primary-text-color;
@@ -18,7 +19,7 @@ footer {
         margin-bottom: 0;
     }
 
-// Styling for contact info section
+/* Styling for contact info section */
     .contact-info {
         margin-top: 0;
         margin-bottom: 0;
@@ -35,7 +36,7 @@ footer {
         color: $tertiary-background;
     }
 
-// Styling for social media icons
+/* Styling for social media icons */
     .social-media {
         display: flex;
         justify-content: space-around;
@@ -53,7 +54,7 @@ footer {
     }
 }
 
-// Styling for copyright section
+/* Styling for copyright section */
 .thin-line {
     border: 0.5px solid $secondary-background;
 }
@@ -72,7 +73,7 @@ footer {
     margin-bottom: 15px;
 }
 
-// Media breakpoints to make footer responsive on tablet
+/* Media breakpoints to make footer responsive on tablet */
 @media screen and (min-width:600px) {
 
     footer {
@@ -101,7 +102,7 @@ footer {
     }
 }
 
-// Media breakpoints to make footer responsive on desktop
+/* Media breakpoints to make footer responsive on desktop */
 @media screen and (min-width:1000px) {
 
     footer {

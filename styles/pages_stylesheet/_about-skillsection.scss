@@ -1,6 +1,7 @@
 @import "../defaults/color";
 @import "../defaults/font";
 
+/* Mixin of each individual description boxes, namely tech skills, soft skills, education and experience */
 @mixin description-box {
     border: none;
     border-radius: 5%;
@@ -10,12 +11,14 @@
     margin: 8px;
 }
 
+/* Mixin of the description boxes for desktop view */
 @mixin description-box-desktop {
     height: 280px;
     width: 280px;
     padding: 30px;
 }
 
+/* Mixin of the description boxes for tablet view */
 @mixin description-box-tablet {
     height: 200px;
     width: 200px;
@@ -27,6 +30,7 @@
     overflow: hidden;
 }
 
+/* Mixin for the headline of the description boxes */
 @mixin box-headline {
     color: $secondary-text-color;
     display:flex;
@@ -48,6 +52,7 @@
     margin-top: 5px;
 }
 
+/* Styling for the whole section 2 of the About page */
 .about-section-2 {
     margin-left: 15px;
     margin-right: 15px;
@@ -57,7 +62,7 @@
     justify-items: center;
 }
 
-// Styling for the short bio 
+/* Styling for the short bio */
 .short-bio {
     display:flex;
     flex-direction: column;
@@ -68,15 +73,14 @@
     .intro {
         color: $secondary-text-color;
         margin-bottom: 0;
-        font-size: 1.3rem;
-        font-family: $primary-font;
-        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: $tertiary-font;
     }
 
     .brief {
         text-align: center;
         font-family: $primary-font;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .resume-button {
@@ -96,15 +100,16 @@
             font-weight: bold;
             color: black;
         }
+        
+        &:hover {
+            background-color: #E1D5D9;
+            border:#E1D5D9;
+        }
     }
 }
 
-.resume-button:hover {
-    background-color: #E1D5D9;
-    border:#E1D5D9;
-}
 
-// Styling for the whole section of short descriptions of skills and experience.
+/* Styling for the section that includes 4 individual description boxes*/
 .description-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,9 +141,9 @@
     }
 }
 
-// Styling for individual skill boxes
+/* Styling for individual skill boxes */
 
-// Tech skills box
+/* Tech skills box */
 .tech-skills {
     @include box-styling();
 
@@ -162,7 +167,7 @@
     }
 }
 
-// Soft skill box
+/* Soft skill box */
 .soft-skills {
     @include box-styling();
 
@@ -186,7 +191,7 @@
     }
 }
 
-// Education background box
+/* Education background box */
 .education {
     @include box-styling();
 
@@ -200,23 +205,23 @@
 
     .education-list {
         font-family: $primary-font;
-        font-size: 12px;
+        font-size: 0.8rem;
         margin-top: 5px;
 
         #latrobe {
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
 
         #academy {
             margin-top: 2px;
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
     }
 }
 
-// Work history box
+/* Work history box */
 .experience {
     @include box-styling();
 
@@ -230,23 +235,23 @@
 
     .experience-list {
         font-family: $primary-font;
-        font-size: 12px;
+        font-size: 0.8rem;
         margin-top: 5px;
 
         #bosch {
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
 
         #programmed {
             margin-top: 10px;
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: bold;
         }
     }
 }
 
-// Media breakpoints for responsive view on tablet.
+/* Media breakpoints for responsive view on tablet. */
 
 @media screen and (min-width:700px) {
     .about-section-2 {
@@ -263,12 +268,12 @@
             justify-content: flex-start;
             align-items: flex-start;
             margin-left: 50px;
+            margin-top: 0;
         
             .intro {
                 color: $secondary-text-color;
-                font-size: 1.5rem;
-                font-family: $primary-font;
-                font-weight: bold;
+                font-size: 1.8rem;
+                font-family: $tertiary-font;
             }
         
             .brief {
@@ -341,15 +346,15 @@
     }
 }
 
-// Media breakpoints for responsive view on desktop.
+/* Media breakpoints for responsive view on desktop. */
 
 @media screen and (min-width:1200px) {
     .about-section-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-top: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
         margin-right: 50px;
         margin-left: 100px;
         margin-bottom: 100px;
@@ -467,7 +472,7 @@
     }
 }
 
-// Animation to make section 2 slowly fade in when loading webpage
+/* Animation to make section 2 slowly fade in when loading webpage */
 .about-section-2 {
     animation: fadein 3s linear 1 forwards;
 }

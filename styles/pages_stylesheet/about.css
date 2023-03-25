@@ -1,3 +1,12 @@
+/* The About page has three sections. 
+    Section 1 is introduction, section 2 is a brief of skills and section 3 (last section) is my interest/vision.
+    The styling of section 1 is included in the about.scss file.
+    Two _scss file were created for section 2 and section 3 and were imported in this main scss file as below for the purpose of clarity. */
+/* Mixin of each individual description boxes, namely tech skills, soft skills, education and experience */
+/* Mixin of the description boxes for desktop view */
+/* Mixin of the description boxes for tablet view */
+/* Mixin for the headline of the description boxes */
+/* Styling for the whole section 2 of the About page */
 .about-section-2 {
   margin-left: 15px;
   margin-right: 15px;
@@ -7,6 +16,7 @@
   justify-items: center;
 }
 
+/* Styling for the short bio */
 .short-bio {
   display: flex;
   flex-direction: column;
@@ -17,14 +27,13 @@
 .short-bio .intro {
   color: #58545B;
   margin-bottom: 0;
-  font-size: 1.3rem;
-  font-family: "Cormorant Infant", serif;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
 }
 .short-bio .brief {
   text-align: center;
   font-family: "Cormorant Infant", serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .short-bio .resume-button {
   border: 1px solid #B7A7AE;
@@ -43,12 +52,12 @@
   font-weight: bold;
   color: black;
 }
-
-.resume-button:hover {
+.short-bio .resume-button:hover {
   background-color: #E1D5D9;
   border: #E1D5D9;
 }
 
+/* Styling for the section that includes 4 individual description boxes*/
 .description-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -90,6 +99,8 @@
   margin: 8px;
 }
 
+/* Styling for individual skill boxes */
+/* Tech skills box */
 .tech-skills {
   box-sizing: border-box;
   padding: 15px;
@@ -119,6 +130,7 @@
   margin: 2px;
 }
 
+/* Soft skill box */
 .soft-skills {
   box-sizing: border-box;
   padding: 15px;
@@ -148,6 +160,7 @@
   margin: 2px;
 }
 
+/* Education background box */
 .education {
   box-sizing: border-box;
   padding: 15px;
@@ -169,19 +182,20 @@
 }
 .education .education-list {
   font-family: "Cormorant Infant", serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   margin-top: 5px;
 }
 .education .education-list #latrobe {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 .education .education-list #academy {
   margin-top: 2px;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
+/* Work history box */
 .experience {
   box-sizing: border-box;
   padding: 15px;
@@ -203,19 +217,20 @@
 }
 .experience .experience-list {
   font-family: "Cormorant Infant", serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   margin-top: 5px;
 }
 .experience .experience-list #bosch {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 .experience .experience-list #programmed {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
+/* Media breakpoints for responsive view on tablet. */
 @media screen and (min-width: 700px) {
   .about-section-2 {
     display: grid;
@@ -231,12 +246,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 50px;
+    margin-top: 0;
   }
   .about-section-2 .short-bio .intro {
     color: #58545B;
-    font-size: 1.5rem;
-    font-family: "Cormorant Infant", serif;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: "Oswald", sans-serif;
   }
   .about-section-2 .short-bio .brief {
     font-family: "Cormorant Infant", serif;
@@ -295,13 +310,14 @@
     font-size: 18px;
   }
 }
+/* Media breakpoints for responsive view on desktop. */
 @media screen and (min-width: 1200px) {
   .about-section-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-right: 50px;
     margin-left: 100px;
     margin-bottom: 100px;
@@ -401,6 +417,7 @@
     font-size: 20px;
   }
 }
+/* Animation to make section 2 slowly fade in when loading webpage */
 .about-section-2 {
   animation: fadein 3s linear 1 forwards;
 }
@@ -476,38 +493,42 @@
     text-align: left;
   }
 }
+/* Styling for the whole section 1 of About page
+Using display grid is to have the conversation box overlap the heading background in mobile view */
 .about-section-1 {
   display: grid;
   grid-template-columns: 1fr 18fr 1fr;
   grid-template-rows: 30px 20px 1fr;
   box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 #heading-background {
   background-color: #58545B;
   grid-column: 1/-1;
   grid-row: 1/3;
-  height: 700px;
+  height: 900px;
 }
 
+/* Styling for the introduction section, which contains the photo and the first intro box */
 .introduction {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
   box-sizing: border-box;
   background-color: transparent;
   grid-column: 2/3;
   grid-row: 2/-1;
   overflow: auto;
+  margin-top: 20px;
+  /* The first intro box contains a greeting and a short introduction paragraph */
 }
 .introduction .intro-image-container {
+  height: 440px;
   box-sizing: border-box;
+  overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
+  border: 20px solid #E1D5D9;
 }
 .introduction .intro-image {
-  height: 330px;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -516,7 +537,7 @@
   background-color: #E1D5D9;
   font-family: "Cormorant Infant", serif;
   margin: 20px;
-  margin-top: 0;
+  margin-bottom: 0px;
   padding: 18px;
   border-radius: 15px;
 }
@@ -530,76 +551,89 @@
   padding-right: 15px;
 }
 .introduction .first-intro .intro-para {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 700px) {
+/* Media breakpoints for responsive view on tablet. */
+@media screen and (min-width: 600px) {
   #heading-background {
-    height: 550px;
-  }
-  .about-section-1 {
-    margin-bottom: 100px;
+    height: 720px;
   }
   .introduction {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    margin-left: 30px;
-    align-items: normal;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .introduction .intro-image-container .intro-image {
+  .introduction .intro-image-container {
     height: 420px;
   }
   .introduction .first-intro {
-    background-color: transparent;
-    padding-top: 0;
-  }
-  .introduction .first-intro .greeting {
-    font-size: 1.5rem;
-    color: #E1D5D9;
-  }
-  .introduction .first-intro .intro-para {
-    font-size: 1.1rem;
-    color: white;
+    margin-top: 30px;
   }
 }
+/* Media breakpoints for responsive view on desktop */
 @media screen and (min-width: 1200px) {
+  #heading-background {
+    height: 600px;
+  }
   .about-section-1 {
     margin-bottom: 100px;
   }
   .introduction {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    margin-left: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    margin-left: 80px;
     margin-right: 50px;
     align-items: normal;
+    margin-top: 50px;
   }
-  .introduction .intro-image-container .intro-image {
-    height: 430px;
-    margin-top: 10px;
+  .introduction .intro-image-container {
+    grid-column: 1/3;
+    height: 440px;
   }
   .introduction .first-intro {
+    grid-column: 3/-1;
     background-color: transparent;
-    padding-right: 0;
+    padding: 0px;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 0px;
   }
   .introduction .first-intro .greeting {
     font-size: 2rem;
     color: #E1D5D9;
   }
   .introduction .first-intro .intro-para {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
   }
 }
+/* Media breakpoints for responsive view on monitor. */
+@media screen and (min-width: 1500px) {
+  #heading-background {
+    height: 680px;
+  }
+  .about-section-1 {
+    margin-bottom: 100px;
+  }
+  .introduction .intro-image-container {
+    height: 500px;
+  }
+  .introduction .first-intro .intro-para {
+    font-size: 1.5rem;
+  }
+}
+/* Animation effect for the heading of About page */
 .intro-image-container {
   animation: image-move 3s 1;
   animation-timing-function: ease;
   position: relative;
   overflow-x: hidden;
+  /* To hide the scrollbar when using slide transition */
 }
 
 @keyframes image-move {
@@ -610,7 +644,8 @@
     left: 0px;
   }
 }
-.conversation-box {
+/* To hide the scrollbar when using slide transition */
+.first-intro {
   overflow-x: hidden;
 }
 

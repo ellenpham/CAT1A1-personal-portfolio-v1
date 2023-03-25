@@ -35,6 +35,7 @@ a:hover {
     width: 50%;
   }
 }
+/* Styling for banner background, which includes a background image  */
 .banner-background {
   display: flex;
   align-items: center;
@@ -48,8 +49,9 @@ a:hover {
   opacity: 50%;
 }
 
+/* Styling for the head banner, which includes profile photo, name, tittle and links to social media  */
 .head-banner {
-  height: 480px;
+  height: 500px;
   width: 300px;
   position: absolute;
   background-color: #1C252C;
@@ -72,36 +74,50 @@ a:hover {
   font-size: 40px;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .head-banner .head-title .full-stack {
-  font-size: 30px;
+  font-size: 1.8rem;
   font-family: "Oswald", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .head-banner .head-title .developer {
-  font-size: 30px;
+  font-size: 1.8rem;
   font-family: "Oswald", sans-serif;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.head-banner .head-title #social-media-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  margin-top: 15px;
+}
+.head-banner .head-title #social-media-top #fa-brands-top {
+  color: #B7A7AE;
+  font-size: 1.1rem;
+}
+.head-banner .head-title #social-media-top #fa-brands-top:hover {
+  color: #E1D5D9;
 }
 .head-banner .head-title .underline {
-  border: 1.5px solid white;
-  width: 140px;
+  border: 1.5px solid #B7A7AE;
+  width: 50%;
   margin-top: 0;
 }
 
 /* Styling for responsive view on tablet and desktop */
 @media screen and (min-width: 700px) {
   .head-banner {
-    height: 400px;
+    height: 430px;
     width: 600px;
     flex-direction: row;
   }
   .head-banner #profile-photo {
-    height: 320px;
-    width: 230px;
+    height: 350px;
+    width: 260px;
     margin-top: 40px;
     margin-left: 40px;
   }
@@ -110,21 +126,19 @@ a:hover {
   }
   .head-banner .head-title #name::before {
     content: "Hello, I'm";
-    font-size: 25px;
+    font-size: 1.5rem;
     display: block;
     margin-bottom: 15px;
   }
   .head-banner .head-title #name {
     margin-top: 0;
-    margin-bottom: 33px;
     font-size: 60px;
+  }
+  .head-banner .head-title #social-media-top {
+    width: 40%;
   }
   .head-banner .head-title .full-stack {
     margin-top: 30px;
-    font-size: 25px;
-  }
-  .head-banner .head-title .developer {
-    font-size: 25px;
   }
 }
 /* Animation to make head banner slowly fade in when loading webpage*/
@@ -711,6 +725,7 @@ a:hover {
     font-size: 1rem;
   }
 }
+/* Styling for the whole footer and footer's header */
 footer {
   background-color: #58545B;
   color: white;
@@ -721,6 +736,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /* Styling for contact info section */
+  /* Styling for social media icons */
 }
 footer #get-in-touch {
   font-size: 1.5rem;
@@ -753,6 +770,7 @@ footer .fa-brands:hover {
   color: #B7A7AE;
 }
 
+/* Styling for copyright section */
 .thin-line {
   border: 0.5px solid #E1D5D9;
 }
@@ -771,6 +789,7 @@ footer .fa-brands:hover {
   margin-bottom: 15px;
 }
 
+/* Media breakpoints to make footer responsive on tablet */
 @media screen and (min-width: 600px) {
   footer .social-media {
     width: 50%;
@@ -791,6 +810,7 @@ footer .fa-brands:hover {
     font-size: 1rem;
   }
 }
+/* Media breakpoints to make footer responsive on desktop */
 @media screen and (min-width: 1000px) {
   footer .social-media {
     width: 30%;
