@@ -44,7 +44,19 @@ The About page contains more detailed and more personal information about me, wh
 
 ### Work
 
-The Work page contains all the projects that I have worked on. The content includes the description of all steps in the working process and photos/screenshots taken during the process.
+The link to Work page on navigation bar will navigate to the section 3 of homepage, which showcased all projects. 
+
+When clicking on each individual project thumbnails, it will navigate to individual Project pages. Each Project page's content includes the description of all steps in the working process and photos/screenshots taken during the process.
+
+### Blog
+
+The Blog pages contains a list of articles, which are categorized under topics. There are currently 4 topics of different genres, including website development, learning resources/materials and tips in personal growth and wellness, which are applicable in work and life. 
+
+When clicking on each individual article thumbnails, it will navigate to individual Article pages. 
+
+The Article page contains the article's content and a list on a side, where you can find the links back to the particular topics and links to related articles in the same topic.
+
+At the moment, there are only four Article pages which were updated with full components, those are the latest article of each topic. The rest in the articles list are currently displayed as a placeholder. 
 
 ### Contact
 

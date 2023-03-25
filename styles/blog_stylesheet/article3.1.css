@@ -1,0 +1,132 @@
+main {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.back-to-blog {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.topic {
+  font-family: "Oswald", sans-serif;
+  color: #B7A7AE;
+}
+
+.article-heading {
+  font-family: "Inter", sans-serif;
+}
+
+.date-published {
+  font-family: "Cormorant Infant", serif;
+}
+
+.article-heading-image {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.content-para {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.side-nav {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  section .main-content .topic {
+    font-size: 1.2rem;
+  }
+  section .main-content .article-heading {
+    font-size: 2rem;
+  }
+  section .main-content .article-heading-image {
+    height: 250px;
+  }
+  section .main-content .content-para {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .side-nav {
+    display: block;
+  }
+  main {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  section .main-content {
+    grid-column: 1/3;
+  }
+  section .main-content .topic {
+    font-size: 1.2rem;
+  }
+  section .main-content .article-heading {
+    font-size: 2rem;
+  }
+  section .main-content .article-heading-image {
+    height: 300px;
+  }
+  section .main-content .content-para {
+    font-size: 1.2rem;
+  }
+  section .side-nav {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  section .side-nav .categories {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 100px;
+  }
+  section .side-nav .categories #categories-heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: #B7A7AE;
+  }
+  section .side-nav .categories .topic-link {
+    text-decoration: none;
+    color: #58545B;
+  }
+  section .side-nav .categories .topic-link:hover {
+    color: #B7A7AE;
+  }
+  section .side-nav .related-articles {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+  }
+  section .side-nav .related-articles #related-articles-heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    color: #B7A7AE;
+  }
+  section .side-nav .related-articles .related-article-link {
+    text-decoration: none;
+    color: #58545B;
+  }
+  section .side-nav .related-articles .related-article-link:hover {
+    color: #B7A7AE;
+  }
+}/*# sourceMappingURL=article3.1.css.map */
