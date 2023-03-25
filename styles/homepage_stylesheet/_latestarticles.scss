@@ -62,30 +62,31 @@
     }
 
     .more-articles-button {
-        border: 1px solid $tertiary-background;
+        border: 1px solid $secondary-background;
         border-radius: 20px;
         height: 40px;
-        width: 120px;
+        width: 130px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $tertiary-background;
+        background-color: $secondary-background;
         margin-bottom: 20px;
+
+        &:hover {
+            background-color: $tertiary-background;
+            border: $tertiary-background;
+        }
         
         a {
             text-decoration: none;
             font-family: $secondary-font;
-            font-size: 13px;
+            font-size: 0.8rem;
             font-weight: bold;
             color: black;
         }
     }
 }
 
-.more-articles-button:hover {
-    background-color: #E1D5D9;
-    border:#E1D5D9;
-}
 
 // Styling for the list of articles 
 .articles-boxes {
@@ -222,7 +223,7 @@
         .latest-articles-brief {
             text-align: left;
             width: 80%;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
     }
 }

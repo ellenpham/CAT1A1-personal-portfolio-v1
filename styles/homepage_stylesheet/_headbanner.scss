@@ -64,8 +64,8 @@
     }
 }
 
-
-@media screen and (min-width: 600px) {
+/* Styling for responsive view on tablet and desktop */
+@media screen and (min-width: 700px) {
     .head-banner {
         height: 400px;
         width: 600px;
@@ -106,7 +106,7 @@
     }
 }
 
-// Animation to make head banner slowly fade in when loading webpage
+/* Animation to make head banner slowly fade in when loading webpage*/
 .head-banner {
     animation: fade-in 3s ease-in-out 1 forwards;
 }
