@@ -1,4 +1,4 @@
-# **Ellen My Pham - Portfolio Website**
+# **Ellen Pham - Portfolio Website**
 
 # Purpose
 This is a personal portfolio website which I created to display my information, including my skills, my area of interest, my professional experience and my projects. The idea is to present a professional profile to potential employers who are in search of a developer or IT professional.
@@ -32,7 +32,7 @@ This page contains my contact details, links to social media and a chat box.
 The homepage is now displaying only the head banner, with my profile photo and a head title. I am working on adding more features to the homepage, including the below:
 - Header (completed)
 - Section 1: Head banner (completed)
-- Section 2: Short bio and short descriptions of skills and experiences with a link to my CV (completed)
+- Section 2: Short bio (completed)
 - Section 3: A brief showcase of my work (completed)
 - Section 4: A list of latest blog articles (completed)
 - Section 5: A section for references (completed)
