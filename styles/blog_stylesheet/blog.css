@@ -107,8 +107,8 @@ section .blog-section .blog-topic {
   }
   section .blog-section .articles-list {
     display: grid;
-    grid-template-columns: 330px 330px 330px;
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-bottom: 50px;
   }
   section .blog-section .articles-list .image-holder {
