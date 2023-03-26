@@ -125,6 +125,7 @@
   margin-top: 5px;
   padding-left: 0;
   font-family: "Cormorant Infant", serif;
+  font-size: 0.9rem;
 }
 .tech-skills .tech-skills-list li {
   margin: 2px;
@@ -641,7 +642,7 @@ Using display grid is to have the conversation box overlap the heading backgroun
     color: #E1D5D9;
   }
   .introduction .first-intro .intro-para {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: white;
   }
 }

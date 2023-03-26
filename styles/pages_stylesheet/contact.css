@@ -1,3 +1,4 @@
+/* Styling for the whole Contact page */
 section {
   margin-left: 50px;
   margin-right: 50px;
@@ -5,6 +6,7 @@ section {
   margin-bottom: 80px;
 }
 
+/* Styling for the contact information section */
 .contact-me {
   margin-bottom: 50px;
   font-family: "Cormorant Infant", serif;
@@ -32,6 +34,7 @@ section {
   margin-right: 8px;
 }
 
+/* Styling for the form section */
 form {
   margin-bottom: 40px;
 }
@@ -84,6 +87,7 @@ form .send-button #send:hover {
   color: white;
 }
 
+/* Styling for responsive view on tablet and desktop */
 @media screen and (min-width: 700px) {
   section {
     display: grid;
@@ -104,6 +108,7 @@ form .send-button #send:hover {
     margin-top: 20px;
   }
 }
+/* Animation effect for the Contact page */
 .contact-me {
   animation: info-move 3s 1;
   animation-timing-function: ease;

@@ -40,7 +40,7 @@
     margin-bottom: 50px;
 }
 
-// Styling for the introduction of section 4
+/* Styling for the introduction of section 4 */
 .latest-articles-intro {
     display:flex;
     flex-direction: column;
@@ -88,7 +88,7 @@
 }
 
 
-// Styling for the list of articles 
+/* Styling for the list of articles  */
 .articles-boxes {
 
     .article-1 {
@@ -176,7 +176,7 @@
     color: $tertiary-background;
 }
 
-// Media breakpoints to make section 4 of homepage responsive on tablet.
+/* Media breakpoints to make section 4 of homepage responsive on tablet. */
 
 @media screen and (min-width:700px) {
     .home-section-4 {
@@ -202,7 +202,7 @@
     }
 }
 
-// Media breakpoints to make section 4 of homepage responsive on desktop.
+/* Media breakpoints to make section 4 of homepage responsive on desktop. */
 
 @media screen and (min-width:1000px) {
     .home-section-4 {

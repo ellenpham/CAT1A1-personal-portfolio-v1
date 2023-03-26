@@ -8,7 +8,7 @@
     transition: 0.8s ease;
 }
 
-// Styling for the whole section 3
+/* Styling for the whole section 3 */
 #home-section-3 {
     background-color: $secondary-text-color;
     width: 100%;
@@ -35,7 +35,7 @@
     margin-bottom: 50px;
 }
 
-// Styling for the project boxes
+/* Styling for the project boxes */
 .project-container {
     display: grid;
     grid-template-columns: repeat(1fr, 1fr);
@@ -71,7 +71,7 @@
     font-family: $tertiary-font;
 }
 
-// Image overlay for project 1
+/* Image overlay for project 1 */
 .overlay-1 {
     @include home-project-image-overlay();
 
@@ -103,7 +103,7 @@
     left: 0;
 }
 
-// Image overlay for project 3
+/* Image overlay for project 3 */
 .overlay-3 {
     @include home-project-image-overlay();
 
@@ -118,7 +118,7 @@
     height: 100%;
 }
 
-// Image overlay for project 4
+/* Image overlay for project 4 */
 .overlay-4 {
     @include home-project-image-overlay();
 
@@ -134,7 +134,7 @@
     right: 0;
 }
 
-// Image overlay for project 5
+/* Image overlay for project 5 */
 .overlay-5 {
     @include home-project-image-overlay();
 
@@ -150,7 +150,7 @@
     left: 0;
 }
 
-// Image overlay for project 6
+/* Image overlay for project 6 */
 .overlay-6 {
     @include home-project-image-overlay();
 
@@ -165,7 +165,7 @@
     height: 100%;
 }
 
-// Media breakpoints to make section 3 of homepage responsive on tablet. 
+/* Media breakpoints to make section 3 of homepage responsive on tablet. */
 @media screen and (min-width:800px) {
 
     .project-container {
@@ -183,7 +183,7 @@
     }
 }
 
-// Media breakpoints to make section 3 of homepage responsive on desktop. 
+/* Media breakpoints to make section 3 of homepage responsive on desktop.*/
 @media screen and (min-width:1000px) {
     #my-work-header {
         font-size: 2rem;

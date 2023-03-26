@@ -1,8 +1,8 @@
 @import "../defaults/color";
 @import "../defaults/font";
 
-// The below styling are applied the same to the latest article of each topic
-// Those are article 1.1 , article 2.1, article 3.1 and article 4.1
+/* The below styling are applied the same to the latest article of each topic
+Those are article 1.1 , article 2.1, article 3.1 and article 4.1 */
 main {
     margin-left: 40px;
     margin-right: 40px;
@@ -47,7 +47,7 @@ main {
     display: none;
 }
 
-// Styling for responsive view on tablet
+/* Styling for responsive view on tablet */
 
 @media screen and (min-width: 700px) {
 
@@ -81,7 +81,7 @@ main {
     }
 }
 
-// Styling for responsive view on desktop
+/* Styling for responsive view on desktop */
 
 @media screen and (min-width: 1100px) {
 

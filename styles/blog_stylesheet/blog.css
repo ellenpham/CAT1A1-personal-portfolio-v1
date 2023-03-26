@@ -1,8 +1,10 @@
+/* Styling for parallax section */
 .parallax {
   background-image: url(https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   min-height: 200px;
 }
 
+/* Styling for the whole blog page */
 section {
   margin-left: 30px;
   margin-right: 30px;
@@ -66,6 +68,7 @@ section .blog-section .blog-topic {
   margin-bottom: 30px;
 }
 
+/* Styling for responsive view on tablet */
 @media screen and (min-width: 600px) {
   .parallax {
     min-height: 300px;
@@ -85,6 +88,7 @@ section .blog-section .blog-topic {
     height: 350px;
   }
 }
+/* Styling for responsive view on desktop */
 @media screen and (min-width: 1000px) {
   .parallax {
     min-height: 400px;
@@ -116,6 +120,7 @@ section .blog-section .blog-topic {
     width: 100%;
   }
 }
+/* Styling for responsive view on monitor */
 @media screen and (min-width: 1500px) {
   .parallax {
     min-height: 500px;

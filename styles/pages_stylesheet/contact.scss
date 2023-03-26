@@ -1,6 +1,7 @@
 @import "../defaults/font";
 @import "../defaults/color";
 
+/* Styling for the whole Contact page */
 section {
     margin-left: 50px;
     margin-right: 50px;
@@ -9,6 +10,7 @@ section {
 
 }
 
+/* Styling for the contact information section */
 .contact-me {
     margin-bottom: 50px;
     font-family: $primary-font;
@@ -40,6 +42,7 @@ section {
         }
     }
 
+/* Styling for the form section */
 form {
 
     margin-bottom: 40px;
@@ -103,7 +106,7 @@ form {
     }
 }
 
-// Styling for responsive view on tablet and desktop
+/* Styling for responsive view on tablet and desktop */
 @media screen and (min-width:700px) {
     section {
         display: grid;
@@ -130,7 +133,7 @@ form {
     }
 }
 
-// Animation effect for the Contact page
+/* Animation effect for the Contact page */
 
 .contact-me {
     animation: info-move 3s 1;
