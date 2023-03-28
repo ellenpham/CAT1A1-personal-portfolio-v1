@@ -1,7 +1,7 @@
 @import "../defaults/font";
 @import "../defaults/color";
 
-// Styling for project heading section
+/* // Styling for project heading section */
 .project-heading {
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
     object-fit: cover;
 }
 
-// Styling for project content section
+/* // Styling for project content section */
 
 .project-content-container {
     margin-left: 50px;
@@ -47,7 +47,7 @@ h1 {
 }
 
 
-// Styling for responsive view on tablet
+/* // Styling for responsive view on tablet */
 @media screen and (min-width: 600px) {
     .project-content-container {
         margin-left: 100px;
@@ -70,7 +70,7 @@ h1 {
     }
 }
 
-// Styling for responsive view on desktop
+/* // Styling for responsive view on desktop */
 @media screen and (min-width: 1000px) {
     .project-content-container {
         margin-left: 250px;

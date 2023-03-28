@@ -1,13 +1,7 @@
 @import "../defaults/font";
 @import "../defaults/color";
 
-// Styling for sticky navigation bar for keep audience engaging despite long content
-header {
-    position: sticky;
-    top:0;
-}
-
-// Styling for project heading section
+/* // Styling for project heading section */
 .project-heading {
     box-sizing: border-box;
 }
@@ -18,7 +12,7 @@ header {
     object-fit: cover;
 }
 
-// Styling for project content section
+/* // Styling for project content section */
 
 .project-content-container {
     margin-left: 50px;
@@ -53,7 +47,7 @@ h1 {
 }
 
 
-// Styling for responsive view on tablet
+/* // Styling for responsive view on tablet */
 @media screen and (min-width: 600px) {
     .project-content-container {
         margin-left: 100px;
@@ -76,7 +70,7 @@ h1 {
     }
 }
 
-// Styling for responsive view on desktop
+/* // Styling for responsive view on desktop */
 @media screen and (min-width: 1000px) {
     .project-content-container {
         margin-left: 250px;

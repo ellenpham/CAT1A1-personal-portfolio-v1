@@ -50,6 +50,7 @@
     border: 0.8px solid $tertiary-background;
     width: 100%;
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 /* Styling for the whole section 2 of the About page */
@@ -150,7 +151,7 @@
     .tech-skills-headline {
         @include box-headline();
 
-        .thinline {
+        hr {
             @include thin-line();
         }
     }
@@ -175,7 +176,7 @@
     .soft-skills-headline {
         @include box-headline();
 
-        .thinline {
+        hr {
             @include thin-line();
         }
     }
@@ -199,7 +200,7 @@
     .education-headline {
         @include box-headline();
 
-        .thinline {
+        hr {
             @include thin-line();
         }
     }
@@ -229,7 +230,7 @@
     .experience-headline {
         @include box-headline();
 
-        .thinline {
+        hr {
             @include thin-line();
         }
     }

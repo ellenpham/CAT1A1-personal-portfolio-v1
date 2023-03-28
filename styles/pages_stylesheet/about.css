@@ -115,10 +115,11 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
-.tech-skills .tech-skills-headline .thinline {
+.tech-skills .tech-skills-headline hr {
   border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 0px;
 }
 .tech-skills .tech-skills-list {
   list-style-type: none;
@@ -146,10 +147,11 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
-.soft-skills .soft-skills-headline .thinline {
+.soft-skills .soft-skills-headline hr {
   border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 0px;
 }
 .soft-skills .soft-skills-list {
   list-style-type: none;
@@ -176,10 +178,11 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
-.education .education-headline .thinline {
+.education .education-headline hr {
   border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 0px;
 }
 .education .education-list {
   font-family: "Cormorant Infant", serif;
@@ -211,10 +214,11 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
-.experience .experience-headline .thinline {
+.experience .experience-headline hr {
   border: 0.8px solid #B7A7AE;
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 0px;
 }
 .experience .experience-list {
   font-family: "Cormorant Infant", serif;
@@ -482,7 +486,7 @@
     font-size: 1.1rem;
     text-align: left;
   }
-  .about-section-3 .motto {
+  .about-section-3 .quote {
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     text-align: left;
@@ -513,7 +517,7 @@
     font-size: 1.2rem;
     text-align: left;
   }
-  .about-section-3 .motto {
+  .about-section-3 .quote {
     font-family: "Oswald", sans-serif;
     font-size: 1.8rem;
     margin-left: 20px;

@@ -41,7 +41,7 @@ main {
   margin-bottom: 30px;
 }
 
-.side-nav {
+aside {
   display: none;
 }
 
@@ -67,9 +67,6 @@ main {
 }
 /* Styling for responsive view on desktop */
 @media screen and (min-width: 1100px) {
-  .side-nav {
-    display: block;
-  }
   main {
     margin-top: 50px;
     margin-left: 100px;
@@ -96,41 +93,42 @@ main {
   section .main-content .content-para {
     font-size: 1.2rem;
   }
-  section .side-nav {
+  section aside {
+    display: block;
     margin-top: 40px;
     margin-left: 50px;
   }
-  section .side-nav .categories {
+  section aside .categories {
     font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     margin-bottom: 100px;
   }
-  section .side-nav .categories #categories-heading {
+  section aside .categories #categories-heading {
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
     color: #B7A7AE;
   }
-  section .side-nav .categories .topic-link {
+  section aside .categories .topic-link {
     text-decoration: none;
     color: #58545B;
   }
-  section .side-nav .categories .topic-link:hover {
+  section aside .categories .topic-link:hover {
     color: #B7A7AE;
   }
-  section .side-nav .related-articles {
+  section aside .related-articles {
     font-family: "Inter", sans-serif;
     font-size: 1.1rem;
   }
-  section .side-nav .related-articles #related-articles-heading {
+  section aside .related-articles #related-articles-heading {
     font-family: "Oswald", sans-serif;
     font-size: 2rem;
     color: #B7A7AE;
   }
-  section .side-nav .related-articles .related-article-link {
+  section aside .related-articles .related-article-link {
     text-decoration: none;
     color: #58545B;
   }
-  section .side-nav .related-articles .related-article-link:hover {
+  section aside .related-articles .related-article-link:hover {
     color: #B7A7AE;
   }
 }/*# sourceMappingURL=article1.1.css.map */
