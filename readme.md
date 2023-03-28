@@ -30,13 +30,13 @@ This page contains my contact details, links to social media and a chat box.
 ### Homepage
 
 The homepage is now displaying only the head banner, with my profile photo and a head title. I am working on adding more features to the homepage, including the below:
-- Header (completed)
-- Section 1: Head banner (completed)
-- Section 2: Short bio (completed)
-- Section 3: A brief showcase of my work (completed)
-- Section 4: A list of latest blog articles (completed)
-- Section 5: A section for references (completed)
-- Footer (completed)
+- Header 
+- Section 1: Head banner 
+- Section 2: Short bio 
+- Section 3: A brief showcase of my work 
+- Section 4: A list of latest blog articles 
+- Section 5: A section for references/testimonials 
+- Footer 
 
 ### About
 
@@ -61,6 +61,22 @@ At the moment, there are only four Article pages which were updated with full co
 ### Contact
 
 The Contact page contains my contact information and a form for any queries to be sent to me. 
+
+# Sitemap
+
+Below is the sitemap for the webpage, which displays the structure of the website. To be specific, the website includes 5 pages:
+- Homepage - This page includes 5 sections (excluding header and footer) 
+    1. Head banner 
+    2. Short bio
+    3. Showcase of work
+    4. List of latest articles
+    5. Testimonials
+- About - This page includes details that demonstrate my skills, visions, personality and interest. 
+- Work - This page was directly linked to the 3rd section of homepage. Here, when clicking into the project's links, it will navigate to individual pages which contains content of the project.
+- Blog - This page displayed a list of 4 blog topics, within each topic, there are links to the articles (currently there are 3 articles in each topic). When clicking into the article's links, it will navigate to individual pages which contains content of the article. The links to the latest articles of each topic are the same as in the list of latest articles section in homepage. Except for the latest articles, the rest of the articles are currently link to a placeholder page which shows work in progress. 
+- Contact - This page displayed my contact information and a form to send messages. 
+
+![Portfolio website Sitemap](./images/T1A2%20-%20Portfolio%20Website%20Sitemap.jpg)
 
 # Styling
 The main portfolio folder has been reorganized to make all the files trackable for more complicated code later on. The following folders have been crated as listed below:
