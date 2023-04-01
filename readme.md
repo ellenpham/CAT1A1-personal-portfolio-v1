@@ -4,7 +4,7 @@
 
 [Link to GitHub repo](https://github.com/ellenpham/MyPham_T1A2_Portfolio-website)
 
-[Link to presentation video](https://youtube.com)
+[Link to presentation video](https://www.youtube.com/watch?v=c0gwoV_9B24)
 
 # 
 
@@ -254,7 +254,7 @@ The lines in the form fade in one by one by using `animation-timing-function: ea
 
 <br>
 
-![Contact Page Animation](./screenshots/contact-animation-effect.gif)
+![Contact Page Animation](./screenshots/contact-animation.gif)
 
 <br>
 
