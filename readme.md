@@ -1,4 +1,4 @@
-# **Ellen (My) Pham - Portfolio Website**
+# **My Pham (Ellen) - Portfolio Website**
 
 [Link to portfolio website](https://ellenmypham.netlify.app/)
 
@@ -43,7 +43,13 @@ This section includes a background image and a banner on top of the background w
 
 The main styling here is `display:flex` for styling the banner in the middle of the background and for the text to be positioned below the profile photo in mobile view and positioned to the left of profile photo in tablet/desktop view. 
 
-The animation effect I am using here is for the banner to slowly fade in when loading page. 
+The animation effect I am using here is for the banner to slowly fade in when loading page.
+
+![Homepage Section 1](./screenshots/homesection1.png)
+
+![Hero section animation](./screenshots/hero-animation-effect.gif)
+
+<br>
 
 2. **Section 2: Short bio**
     
@@ -53,6 +59,10 @@ Again, the main styling is `display:flex` to centre the text section and the but
 
 When hovering over the button, the background colour and the link will change colour.
 
+![Homepage Section 2](./screenshots/homesection2.png)
+
+<br>
+
 3.  **Section 3: A showcase of my work**
 
 This section includes an intro and a showcase of six different projects. The projects are displayed as thumbnail images with links to individual Project pages.  
@@ -60,6 +70,10 @@ This section includes an intro and a showcase of six different projects. The pro
 The main styling for this section is `display:grid` for different layout in different media viewport. 
 
 This section also serves as the Project page. When clicking the Work link on navigation bar, it will navigate to this section.
+
+![Homepage Section 3](./screenshots/homesection3.png)
+
+<br>
 
 4. **Section 4: A list of latest blog articles**
 
@@ -69,9 +83,14 @@ The main styling I am using here is `display:grid` for the intro part in list of
 
 When hovering the button to Blog page, the background and text will change colour.
 
+![Homepage Section 4](./screenshots/homesection4.png)
+
+<br>
+
 5. **Section 5: Testimonials**
 
-This section currently displays text content only, which is my references. This is aimed to expand in content and styles when I have more resources for this section. 
+This section currently displays text content only, which is my references. This is aimed to expand in content and styles when I have more resources for this section.
+
 
 6.  **A bonus section**
 
@@ -79,7 +98,7 @@ This section just displays an image with parallax effect, for decoration purpose
 
 <br>
 
-![Homepage Section 2](./screenshots/hovering-color-changes.gif)
+![Items hovering](./screenshots/hovering-color-changes.gif)
 
 <br>
 
@@ -92,6 +111,10 @@ The About page includes three main sections, listed and explained as below:
 This section includes a photo of myself and a text content regarding my visions.
 
 The key styling is `display:grid` for the photo and text content positioned as column in mobile/tablet view and side by side in desktop view. To be more specific, in mobile/tablet view, the text content is styled in a box with pinkish background and was styled to overlapped the main background, while in the desktop view, the text content is styled to have a transparent background and is completely contained within the main background.
+
+![About Section 1](./screenshots/aboutsection1.png)
+
+<br>
 
 The animation effect used here is to have the photo fading in from the right and the text content fading in from the left when loading page. I achieve this effect by using this code:
 ````
@@ -120,7 +143,7 @@ The paragraphs in the text content part fade in one by one using `animation-timi
 
 <br>
 
-![Homepage Section 2](./screenshots/about-page-animation-effect.gif)
+![About Page Animation](./screenshots/about-page-animation-effect.gif)
 
 <br>
 
@@ -132,6 +155,8 @@ The main styling is `display:flex` for centring all items in the brief intro and
 
 The animation effect I am using here is for the whole section to slowly fade in when loading page. Also, when hovering the link to resume, the button background and text will change colour. 
 
+![About Section 2](./screenshots/aboutsection2.png)
+
 <br>
 
 3.  **Section 3: Story**
@@ -139,14 +164,24 @@ The animation effect I am using here is for the whole section to slowly fade in 
 This section includes text content that demonstrated my background, my personality and my interest. There are also my favourite quotes.
 
 The styling I am using here is `display:grid` for positioning the paragraphs and the quotes in a 2:1 ratio in desktop view.
+
+<br>
     
+![About Section 3](./screenshots/aboutsection3.png)
+
 <br>
 
 ### **Work**
 
 Again, the link to Work page on navigation bar will navigate to the section 3 of homepage, which showcased all projects, currently six projects are displayed.
 
-The layout was designed with `display:grid`. When viewing in mobile, the projects are positioned vertically with one project per row. When viewing in tablet, the projects are positioned in two columns and three rows, two projects per row. When viewing in desktop, the projects are positioned in three columns and two rows, three projects per row. 
+The layout was designed with `display:grid`. When viewing in mobile, the projects are positioned vertically with one project per row. When viewing in tablet, the projects are positioned in two columns and three rows, two projects per row. When viewing in desktop, the projects are positioned in three columns and two rows, three projects per row.
+
+<br>
+
+![Featured work section](./screenshots/homesection3.png)
+
+<br>
 
 The styling effect I am using here is sliding overlay effect, when moving the cursor over the images, the image overlays will slide in different directions (up, down, left, right) and appear links to individual project pages.  
 
@@ -154,7 +189,7 @@ When clicking on those links, it will navigate to individual Project pages. The 
 
 <br>
 
-![Homepage Section 2](./screenshots/projects-overlayeffect.gif)
+![Image Overlay Effect in Featured Work Section ](./screenshots/projects-overlayeffect.gif)
 
 <br>
 
@@ -164,14 +199,32 @@ The Blog pages contains an intro paragraph, lists of articles, which are categor
 
 Regarding page design, there is an image on top of the page with parallax effect, which is for decoration purpose. I used `display:grid` for the main layout of this page. In mobile/tablet view, the list of articles are positioned vertically with one article per row. In desktop view, the display is now three articles per row.
 
+<br>
+
+![Blog page in Mobile view](./screenshots/blogmobile.png)
+![Blog page in Desktop view](./screenshots/blogdesktop.png)
+
+<br>
+
 Also, when hovering the article thumbnails, the image inside will slightly increase in size. When hovering the article title, there will be underline. 
 
+<br>
+
+![Article Thumbnails Hovering](./screenshots/blog-animation-effect.gif)
+
+<br>
 
 When clicking on each individual article thumbnails or articles title, it will navigate to individual Article pages. 
 
 The Article page contains an image and text content, which includes topic, title and date published. Also, there are links to go back to the Blog page on top and bottom of the article, that is for the purpose of engaging audience in case of long content. When hovering back to blog links, the text colour will change colour from black to light pink. 
 
 When viewing on desktop, I use `display:grid` to position a list of links aside, where you can find the links back to a particular topic and links to related articles in the same topic of the current article. When hovering those links, the text colour will change colour from black to light pink. When viewing on mobile/tablet, I use `display: none` to hide this part. 
+
+<br>
+
+![Article page](./screenshots/articlepage.png)
+
+<br>
 
 At the moment, there are only four Article pages which were updated with full components, those are the latest article of each topic. The rest in the articles list are currently displayed as a placeholder. 
 
@@ -201,7 +254,7 @@ The lines in the form fade in one by one by using `animation-timing-function: ea
 
 <br>
 
-![Homepage Section 2](./screenshots/contact-animation-effect.gif)
+![Contact Page Animation](./screenshots/contact-animation-effect.gif)
 
 <br>
 
@@ -243,7 +296,7 @@ Below is the sitemap for the webpage, which displays the structure of the websit
 
 <br>
 
-![Portfolio website Sitemap](./screenshots/sitemap.jpg)
+![Portfolio Website Sitemap](./screenshots/sitemap.jpg)
 Sitemap created using Figma
 
 <br>
@@ -370,4 +423,21 @@ The Placeholder page contains an image and a text line in with typing effect.
 The Contact page contains contact information and a form to send queries.
 
 ![Contact page](./screenshots/contact.png)
+
+<br>
+
+# Target Audience
+
+The website's target audience are employers or recruiters that are looking for a developer or IT specialist. The website also targeted at junior developers, self-taught coders and people with no IT background who wants to switch to tech career, especially female fellows. 
+
+<br>
+
+# Tech Stack
+ 
+- Creating sitemap, wireframes and slide deck: Figma
+- Code editor: VS Code
+- Coding languages: HTML5, CSS, SCSS
+- Version control: GitHub
+- Deployment: Netlify
+- Graphic design: Canva
 
